@@ -36,9 +36,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <div id="container">
-        <h1 id="header">TO-DO LIST</h1>
-        {/* <div id="input">
+      <div id="whole-container">
+        <div id="container">
+          <h1 id="header">TO-DO LIST</h1>
+          {/* <div id="input">
           <input
             type="text"
             placeholder="Enter Text"
@@ -64,21 +65,22 @@ export default class App extends Component {
           })}
         </div> */}
 
-        <Input
-          inputValue={this.state.value}
-          handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
-        />
+          <Input
+            inputValue={this.state.value}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+          />
 
-        <div>
-          <h1>{this.state.value}</h1>
+          <div>
+            <h1>{this.state.value}</h1>
+          </div>
+
+          <List
+            handleDelete={this.handleDelete}
+            handleUpdate={this.handleUpdate}
+            inputData={this.state.data}
+          />
         </div>
-
-        <List
-          handleDelete={this.handleDelete}
-          handleUpdate={this.handleUpdate}
-          inputData={this.state.data}
-        />
       </div>
     );
   }

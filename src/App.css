@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: skyblue;
+}
+
+#whole-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(51, 49, 49);
+    color: white;
 }
 
 
@@ -53,6 +59,7 @@
     min-width: 800px;
     border-radius:20px 0 0 0;
     background-color: #b0f1dc;
+    color: black;
 }
 
 #list h1{
