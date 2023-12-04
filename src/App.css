@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body{
     background-color: #6FFACA;
 }
+
+
 
 #container{
     /* border: 2px solid black; */
